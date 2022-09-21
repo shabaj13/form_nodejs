@@ -1,0 +1,29 @@
+<html lang="en">
+ {{>head}}
+  <body>
+  {{>navbar}}
+    <div class="registration">
+      <form action="/login" method="post">
+
+        <label for="email">Email
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email "
+            required
+          />
+        </label>
+        <label for="password">Password
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required
+          />
+        </label>
+
+        <button type="submit">login</button>
+      </form>
+    </div>
+  </body>
+</html>

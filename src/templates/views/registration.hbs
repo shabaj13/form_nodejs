@@ -1,0 +1,60 @@
+<html lang="en">
+ {{>head}}
+  <body>
+   {{>navbar}}
+    <div class="registration">
+      <form action="/registration" method="post">
+        <label for="fname">FirstName
+          <input
+            type="text"
+            name="fname"
+            placeholder="Enter your first name"
+            required
+          />
+        </label>
+        <label for="lname">LastName
+          <input
+            type="text"
+            name="lname"
+            placeholder="Enter your last name"
+            required
+          />
+        </label>
+        <label for="email">Email
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email "
+            required
+          />
+        </label>
+        <label for="phone">PhoneNo.
+          <input
+            type="number"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </label>
+        <label for="password">Password
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required
+          />
+        </label>
+        <label for="cpassword">Confirm Password
+          <input
+            type="password"
+            name="cpassword"
+            placeholder="Enter confirm password"
+            required
+          />
+        </label>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
